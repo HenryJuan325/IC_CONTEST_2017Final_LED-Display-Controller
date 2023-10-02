@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : LEDDC
+Version: T-2022.03
+Date   : Fri Apr 21 22:56:49 2023
+****************************************
+
+Library(s) Used:
+
+    slow (File: /RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+    sram_512x16 (File: /RAID2/COURSE/si2_contest/si2_contest004/Contest/icc2017cb/04_MEM/sram_512x16_slow_syn.db)
+
+Number of ports:                           23
+Number of nets:                          2181
+Number of cells:                         1889
+Number of combinational cells:           1311
+Number of sequential cells:               575
+Number of macros/black boxes:               2
+Number of buf/inv:                        354
+Number of references:                      65
+
+Combinational area:              10041.818250
+Buf/Inv area:                     1704.189592
+Noncombinational area:           18628.964390
+Macro/Black Box area:           156659.296875
+Net Interconnect area:          256341.315125
+
+Total cell area:                185330.079515
+Total area:                     441671.394640
+1

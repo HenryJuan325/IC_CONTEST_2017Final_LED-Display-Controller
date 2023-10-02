@@ -1,0 +1,95 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LEDDC
+Version: T-2022.03
+Date   : Fri Apr 21 22:56:49 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: scan_cnt_reg[0]
+              (rising edge-triggered flip-flop clocked by DCK)
+  Endpoint: sel_SRAM_flag_reg
+            (rising edge-triggered flip-flop clocked by DCK)
+  Path Group: DCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LEDDC              tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock DCK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  scan_cnt_reg[0]/CK (DFFRX1)              0.00       1.00 r
+  scan_cnt_reg[0]/Q (DFFRX1)               0.90       1.90 r
+  U1875/Y (NAND3XL)                        0.70       2.59 f
+  U1876/Y (NOR3BX1)                        0.54       3.13 r
+  U1877/Y (NAND3XL)                        0.46       3.59 f
+  U1761/Y (NOR2XL)                         0.73       4.32 r
+  U1878/Y (NAND2XL)                        0.53       4.85 f
+  U1879/Y (NOR2XL)                         0.75       5.60 r
+  U1881/Y (OAI22XL)                        0.32       5.92 f
+  sel_SRAM_flag_reg/D (DFFRX1)             0.00       5.92 f
+  data arrival time                                   5.92
+
+  clock DCK (rise edge)                 1300.00    1300.00
+  clock network delay (ideal)              1.00    1301.00
+  clock uncertainty                       -0.10    1300.90
+  sel_SRAM_flag_reg/CK (DFFRX1)            0.00    1300.90 r
+  library setup time                      -0.27    1300.63
+  data required time                               1300.63
+  -----------------------------------------------------------
+  data required time                               1300.63
+  data arrival time                                  -5.92
+  -----------------------------------------------------------
+  slack (MET)                                      1294.71
+
+
+  Startpoint: ci_state_reg[0]
+              (rising edge-triggered flip-flop clocked by GCK)
+  Endpoint: pxl_nxt_reg[15][6]
+            (rising edge-triggered flip-flop clocked by GCK)
+  Path Group: GCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LEDDC              tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GCK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  ci_state_reg[0]/CK (DFFRX1)              0.00       1.00 r
+  ci_state_reg[0]/Q (DFFRX1)               0.64       1.64 f
+  U1818/Y (NOR2BX4)                        0.22       1.86 f
+  U1053/Y (NOR2X1)                         0.65       2.51 r
+  U1068/Y (INVX3)                          0.21       2.72 f
+  U1052/Y (CLKBUFX8)                       0.78       3.50 f
+  U1820/Y (INVX6)                          0.87       4.37 r
+  U1002/Y (AOI222XL)                       0.43       4.79 f
+  U1786/Y (INVXL)                          0.33       5.13 r
+  pxl_nxt_reg[15][6]/D (DFFRX1)            0.00       5.13 r
+  data arrival time                                   5.13
+
+  clock GCK (rise edge)                    4.50       4.50
+  clock network delay (ideal)              1.00       5.50
+  clock uncertainty                       -0.10       5.40
+  pxl_nxt_reg[15][6]/CK (DFFRX1)           0.00       5.40 r
+  library setup time                      -0.27       5.13
+  data required time                                  5.13
+  -----------------------------------------------------------
+  data required time                                  5.13
+  data arrival time                                  -5.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

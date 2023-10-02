@@ -1,0 +1,2457 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Apr 21, 2023 at 23:09:41 CST
+irun
+	-f ncvlog_60.f
+		LEDDC_syn.v
+		-timescale 1ns/10ps
+		-f file_list.f
+			../04_MEM/sram_512x16.v
+		testfixture_60fps.v
+		-v ~/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v
+		+access+r
+		+define+SDF
+		+debug
+		+notimingchecks
+	-loadpli1 debpli:novas_pli_boot
+file: testfixture_60fps.v
+	module worklib.test:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  DFFRX1 \read_cnt_reg[0]  ( .D(n369), .CK(GCK), .RN(n1616), .Q(read_cnt[0])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,333|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \read_cnt_reg[8]  ( .D(n368), .CK(GCK), .RN(n1616), .Q(read_cnt[8])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,335|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \read_cnt_reg[2]  ( .D(n366), .CK(GCK), .RN(n1616), .Q(read_cnt[2])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,339|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \read_cnt_reg[6]  ( .D(n363), .CK(GCK), .RN(n1616), .Q(read_cnt[6])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,345|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 round_reg ( .D(n361), .CK(GCK), .RN(n1615), .Q(round) );
+                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,347|17): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \scan_cnt_reg[7]  ( .D(n358), .CK(DCK), .RN(n1615), .Q(scan_cnt[7])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,352|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \scan_cnt_reg[6]  ( .D(n357), .CK(DCK), .RN(n1615), .Q(scan_cnt[6])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,354|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \scan_cnt_reg[4]  ( .D(n355), .CK(DCK), .RN(n1615), .Q(scan_cnt[4])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,358|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \scan_cnt_reg[2]  ( .D(n353), .CK(DCK), .RN(n1615), .Q(scan_cnt[2])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,362|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \scan_cnt_reg[0]  ( .D(n351), .CK(DCK), .RN(n1615), .Q(scan_cnt[0])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,366|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 cnt_round_reg ( .D(n350), .CK(GCK), .RN(n1615), .Q(cnt_round) );
+                     |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,368|21): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[0][0]  ( .D(n349), .CK(GCK), .RN(n1600), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,369|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[1][0]  ( .D(n348), .CK(GCK), .RN(n1602), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,371|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[2][0]  ( .D(n347), .CK(GCK), .RN(n1614), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,373|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[3][0]  ( .D(n346), .CK(GCK), .RN(n1625), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,375|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[4][0]  ( .D(n345), .CK(GCK), .RN(n1619), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,377|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[5][0]  ( .D(n344), .CK(GCK), .RN(n1595), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,379|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[6][0]  ( .D(n343), .CK(GCK), .RN(n1622), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,381|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[7][0]  ( .D(n342), .CK(GCK), .RN(n1623), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,383|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[8][0]  ( .D(n341), .CK(GCK), .RN(n1595), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,385|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[9][0]  ( .D(n340), .CK(GCK), .RN(n1618), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,387|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[10][0]  ( .D(n339), .CK(GCK), .RN(n1595), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,389|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[11][0]  ( .D(n338), .CK(GCK), .RN(n1621), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,391|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[12][0]  ( .D(n337), .CK(GCK), .RN(n1618), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,393|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[13][0]  ( .D(n336), .CK(GCK), .RN(n1619), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,395|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[14][0]  ( .D(n335), .CK(GCK), .RN(n1625), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,397|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[15][0]  ( .D(n334), .CK(GCK), .RN(n1618), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,399|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \ci_state_reg[0]  ( .D(n643), .CK(GCK), .RN(n1618), .Q(ci_state[0])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,401|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \c_state_reg[0]  ( .D(n_state[0]), .CK(DCK), .RN(n1626), .QN(n1589)
+                        |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,403|24): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \c_state_reg[1]  ( .D(n_state[1]), .CK(DCK), .RN(n1622), .Q(
+                        |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,405|24): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \in_data_reg[15]  ( .D(n627), .CK(DCK), .RN(n1613), .Q(in_data[15])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,407|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \in_data_reg[14]  ( .D(n628), .CK(DCK), .RN(n1621), .Q(in_data[14])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,409|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \in_data_reg[13]  ( .D(n629), .CK(DCK), .RN(n1614), .Q(in_data[13])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,411|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \in_data_reg[12]  ( .D(n630), .CK(DCK), .RN(n1617), .Q(in_data[12])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,413|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \in_data_reg[11]  ( .D(n631), .CK(DCK), .RN(n1595), .Q(in_data[11])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,415|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \in_data_reg[10]  ( .D(n632), .CK(DCK), .RN(n1614), .Q(in_data[10])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,417|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \in_data_reg[9]  ( .D(n633), .CK(DCK), .RN(n1595), .Q(in_data[9]) );
+                        |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,419|24): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \in_data_reg[8]  ( .D(n634), .CK(DCK), .RN(n1618), .Q(in_data[8]) );
+                        |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,420|24): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \in_data_reg[7]  ( .D(n635), .CK(DCK), .RN(n1625), .Q(in_data[7]) );
+                        |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,421|24): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \in_data_reg[6]  ( .D(n636), .CK(DCK), .RN(n1609), .Q(in_data[6]) );
+                        |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,422|24): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \in_data_reg[5]  ( .D(n637), .CK(DCK), .RN(n1613), .Q(in_data[5]) );
+                        |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,423|24): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \in_data_reg[4]  ( .D(n638), .CK(DCK), .RN(n1622), .Q(in_data[4]) );
+                        |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,424|24): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \in_data_reg[3]  ( .D(n639), .CK(DCK), .RN(n1618), .Q(in_data[3]) );
+                        |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,425|24): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \in_data_reg[2]  ( .D(n640), .CK(DCK), .RN(n1617), .Q(in_data[2]) );
+                        |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,426|24): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \in_data_reg[1]  ( .D(n641), .CK(DCK), .RN(n1618), .Q(in_data[1]) );
+                        |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,427|24): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \in_data_reg[0]  ( .D(n626), .CK(DCK), .RN(n1595), .Q(in_data[0]) );
+                        |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,428|24): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[0][0]  ( .D(n610), .CK(GCK), .RN(n1612), .Q(
+                           |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,457|27): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[15][1]  ( .D(n609), .CK(GCK), .RN(n1599), .Q(
+                            |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,459|28): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[0][1]  ( .D(n594), .CK(GCK), .RN(n1600), .Q(
+                           |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,489|27): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[15][2]  ( .D(n593), .CK(GCK), .RN(n1598), .Q(
+                            |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,491|28): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[0][2]  ( .D(n578), .CK(GCK), .RN(n1599), .Q(
+                           |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,521|27): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[15][3]  ( .D(n577), .CK(GCK), .RN(n1600), .Q(
+                            |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,523|28): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[0][3]  ( .D(n562), .CK(GCK), .RN(n1597), .Q(
+                           |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,553|27): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[15][4]  ( .D(n561), .CK(GCK), .RN(n1598), .Q(
+                            |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,555|28): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[0][4]  ( .D(n546), .CK(GCK), .RN(n1599), .Q(
+                           |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,585|27): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[15][5]  ( .D(n545), .CK(GCK), .RN(n1626), .Q(
+                            |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,587|28): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[0][5]  ( .D(n530), .CK(GCK), .RN(n1597), .Q(
+                           |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,617|27): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[15][6]  ( .D(n529), .CK(GCK), .RN(n1596), .Q(
+                            |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,619|28): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[0][6]  ( .D(n514), .CK(GCK), .RN(n1613), .Q(
+                           |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,649|27): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[15][7]  ( .D(n513), .CK(GCK), .RN(n1597), .Q(
+                            |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,651|28): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[0][7]  ( .D(n498), .CK(GCK), .RN(n1596), .Q(
+                           |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,681|27): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[15][8]  ( .D(n497), .CK(GCK), .RN(n1620), .Q(
+                            |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,683|28): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[0][8]  ( .D(n482), .CK(GCK), .RN(n1594), .Q(
+                           |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,713|27): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[15][9]  ( .D(n481), .CK(GCK), .RN(n1621), .Q(
+                            |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,715|28): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[0][9]  ( .D(n466), .CK(GCK), .RN(n1616), .Q(
+                           |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,745|27): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[15][10]  ( .D(n465), .CK(GCK), .RN(n1622), .Q(
+                             |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,747|29): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[0][10]  ( .D(n450), .CK(GCK), .RN(n1609), .Q(
+                            |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,777|28): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[15][11]  ( .D(n449), .CK(GCK), .RN(n1615), .Q(
+                             |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,779|29): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[0][11]  ( .D(n434), .CK(GCK), .RN(n1595), .Q(
+                            |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,809|28): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[15][12]  ( .D(n433), .CK(GCK), .RN(n1607), .Q(
+                             |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,811|29): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[0][12]  ( .D(n418), .CK(GCK), .RN(n1608), .Q(
+                            |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,841|28): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[15][13]  ( .D(n417), .CK(GCK), .RN(n1607), .Q(
+                             |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,843|29): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[0][13]  ( .D(n402), .CK(GCK), .RN(n1607), .Q(
+                            |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,873|28): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[15][14]  ( .D(n401), .CK(GCK), .RN(n1605), .Q(
+                             |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,875|29): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[0][14]  ( .D(n386), .CK(GCK), .RN(n1606), .Q(
+                            |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,905|28): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[15][15]  ( .D(n385), .CK(GCK), .RN(n1604), .Q(
+                             |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,907|29): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_nxt_reg[0][15]  ( .D(n370), .CK(GCK), .RN(n1605), .Q(
+                            |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,937|28): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \cnt_pwm_reg[15]  ( .D(N507), .CK(GCK), .RN(n1594), .QN(n1352) );
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,945|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \cnt_pwm_reg[14]  ( .D(N506), .CK(GCK), .RN(n1618), .QN(n1343) );
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,946|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \pxl_current_reg[5][15]  ( .D(N1021), .CK(GCK), .RN(n1626), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,947|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[6][1]  ( .D(N1026), .CK(GCK), .RN(n1595), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,949|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[6][2]  ( .D(N1031), .CK(GCK), .RN(n1617), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,951|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[6][3]  ( .D(N1036), .CK(GCK), .RN(n1618), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,953|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[6][4]  ( .D(N1041), .CK(GCK), .RN(n1595), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,955|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[6][5]  ( .D(N1046), .CK(GCK), .RN(n1625), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,957|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[6][6]  ( .D(N1051), .CK(GCK), .RN(n1623), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,959|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[6][7]  ( .D(N1056), .CK(GCK), .RN(n1623), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,961|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[6][8]  ( .D(N1061), .CK(GCK), .RN(n1623), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,963|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[6][9]  ( .D(N1066), .CK(GCK), .RN(n1623), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,965|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[6][10]  ( .D(N1071), .CK(GCK), .RN(n1623), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,967|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[6][11]  ( .D(N1076), .CK(GCK), .RN(n1617), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,969|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[6][12]  ( .D(N1081), .CK(GCK), .RN(n1623), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,971|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[6][13]  ( .D(N1086), .CK(GCK), .RN(n1623), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,973|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[6][14]  ( .D(N1091), .CK(GCK), .RN(n1623), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,975|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[6][15]  ( .D(N1096), .CK(GCK), .RN(n1623), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,977|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[7][1]  ( .D(N1101), .CK(GCK), .RN(n1624), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,979|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[7][2]  ( .D(N1106), .CK(GCK), .RN(n1624), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,981|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[7][3]  ( .D(N1111), .CK(GCK), .RN(n1624), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,983|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[7][4]  ( .D(N1116), .CK(GCK), .RN(n1624), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,985|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[7][5]  ( .D(N1121), .CK(GCK), .RN(n1623), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,987|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[7][6]  ( .D(N1126), .CK(GCK), .RN(n1624), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,989|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[7][7]  ( .D(N1131), .CK(GCK), .RN(n1624), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,991|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[7][8]  ( .D(N1136), .CK(GCK), .RN(n1624), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,993|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[7][9]  ( .D(N1141), .CK(GCK), .RN(n1624), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,995|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[7][10]  ( .D(N1146), .CK(GCK), .RN(n1624), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,997|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[7][11]  ( .D(N1151), .CK(GCK), .RN(n1624), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,999|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[7][12]  ( .D(N1156), .CK(GCK), .RN(n1624), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1001|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[7][13]  ( .D(N1161), .CK(GCK), .RN(n1609), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1003|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[7][14]  ( .D(N1166), .CK(GCK), .RN(n1623), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1005|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[7][15]  ( .D(N1171), .CK(GCK), .RN(n1626), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1007|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[8][2]  ( .D(N1181), .CK(GCK), .RN(n1626), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1009|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[8][3]  ( .D(N1186), .CK(GCK), .RN(n1614), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1011|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[8][4]  ( .D(N1191), .CK(GCK), .RN(n1626), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1013|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[8][5]  ( .D(N1196), .CK(GCK), .RN(n1617), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1015|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[8][6]  ( .D(N1201), .CK(GCK), .RN(n1614), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1017|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[8][7]  ( .D(N1206), .CK(GCK), .RN(n1618), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1019|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[8][8]  ( .D(N1211), .CK(GCK), .RN(n1621), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1021|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[8][9]  ( .D(N1216), .CK(GCK), .RN(n1622), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1023|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[8][10]  ( .D(N1221), .CK(GCK), .RN(n1613), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1025|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[8][11]  ( .D(N1226), .CK(GCK), .RN(n1609), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1027|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[8][12]  ( .D(N1231), .CK(GCK), .RN(n1625), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1029|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[8][13]  ( .D(N1236), .CK(GCK), .RN(n1618), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1031|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[8][14]  ( .D(N1241), .CK(GCK), .RN(n1622), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1033|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[8][15]  ( .D(N1246), .CK(GCK), .RN(n1595), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1035|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[9][1]  ( .D(N1251), .CK(GCK), .RN(n1621), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1037|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[9][2]  ( .D(N1256), .CK(GCK), .RN(n1625), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1039|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[9][3]  ( .D(N1261), .CK(GCK), .RN(n1618), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1041|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[9][4]  ( .D(N1266), .CK(GCK), .RN(n1617), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1043|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[9][5]  ( .D(N1271), .CK(GCK), .RN(n1627), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1045|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[9][6]  ( .D(N1276), .CK(GCK), .RN(n1627), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1047|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[15][15]  ( .D(N1771), .CK(GCK), .RN(n1611), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1049|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFSX1 \read_cnt_reg[4]  ( .D(n333), .CK(GCK), .SN(n1607), .Q(read_cnt[4])
+                         |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1051|25): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18583): QN
+
+  DFFRX2 \pxl_current_reg[0][15]  ( .D(N646), .CK(GCK), .RN(n1601), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1075|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \pxl_current_reg[4][7]  ( .D(N906), .CK(GCK), .RN(n1620), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1077|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX1 \pxl_current_reg[2][2]  ( .D(N731), .CK(GCK), .RN(n1625), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1081|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[3][2]  ( .D(N806), .CK(GCK), .RN(n1618), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1083|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[4][2]  ( .D(N881), .CK(GCK), .RN(n1619), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1085|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[5][2]  ( .D(N956), .CK(GCK), .RN(n1626), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1087|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[9][8]  ( .D(N1286), .CK(GCK), .RN(n1627), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1089|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[10][12]  ( .D(N1381), .CK(GCK), .RN(n1607), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1091|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[12][1]  ( .D(N1476), .CK(GCK), .RN(n1614), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1093|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[13][4]  ( .D(N1566), .CK(GCK), .RN(n1615), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1095|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[0][1]  ( .D(N576), .CK(GCK), .RN(n1600), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1097|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[15][5]  ( .D(N1721), .CK(GCK), .RN(n1611), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1099|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[15][2]  ( .D(N1706), .CK(GCK), .RN(n1609), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1103|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[14][14]  ( .D(N1691), .CK(GCK), .RN(n1613), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1105|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[14][13]  ( .D(N1686), .CK(GCK), .RN(n1621), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1107|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[14][11]  ( .D(N1676), .CK(GCK), .RN(n1618), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1109|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[14][10]  ( .D(N1671), .CK(GCK), .RN(n1595), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1111|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[15][1]  ( .D(N1701), .CK(GCK), .RN(n1625), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1113|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[14][15]  ( .D(N1696), .CK(GCK), .RN(n1595), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1115|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[14][12]  ( .D(N1681), .CK(GCK), .RN(n1613), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1117|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[14][9]  ( .D(N1666), .CK(GCK), .RN(n1622), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1119|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[11][8]  ( .D(N1436), .CK(GCK), .RN(n1626), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1121|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[14][8]  ( .D(N1661), .CK(GCK), .RN(n1621), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1123|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[10][14]  ( .D(N1391), .CK(GCK), .RN(n1625), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1125|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[10][10]  ( .D(N1371), .CK(GCK), .RN(n1609), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1127|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[10][1]  ( .D(N1326), .CK(GCK), .RN(n1627), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1131|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[9][14]  ( .D(N1316), .CK(GCK), .RN(n1627), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1133|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[13][5]  ( .D(N1571), .CK(GCK), .RN(n1627), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1135|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[12][11]  ( .D(N1526), .CK(GCK), .RN(n1627), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1137|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[10][9]  ( .D(N1366), .CK(GCK), .RN(n1627), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1139|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[10][3]  ( .D(N1336), .CK(GCK), .RN(n1627), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1141|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[9][15]  ( .D(N1321), .CK(GCK), .RN(n1627), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1143|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[9][12]  ( .D(N1306), .CK(GCK), .RN(n1627), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1145|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[9][11]  ( .D(N1301), .CK(GCK), .RN(n1627), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1147|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[9][9]  ( .D(N1291), .CK(GCK), .RN(n1627), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1149|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[9][7]  ( .D(N1281), .CK(GCK), .RN(n1627), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1151|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[10][5]  ( .D(N1346), .CK(GCK), .RN(n1603), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1153|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[13][6]  ( .D(N1576), .CK(GCK), .RN(n1604), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1155|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[12][13]  ( .D(N1536), .CK(GCK), .RN(n1603), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1157|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[10][8]  ( .D(N1361), .CK(GCK), .RN(n1605), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1159|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[10][7]  ( .D(N1356), .CK(GCK), .RN(n1594), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1161|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[10][6]  ( .D(N1351), .CK(GCK), .RN(n1596), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1163|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[10][4]  ( .D(N1341), .CK(GCK), .RN(n1606), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1165|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[10][2]  ( .D(N1331), .CK(GCK), .RN(n1599), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1167|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[1][10]  ( .D(N696), .CK(GCK), .RN(n1602), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1179|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[1][11]  ( .D(N701), .CK(GCK), .RN(n1602), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1181|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[1][12]  ( .D(N706), .CK(GCK), .RN(n1626), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1183|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[1][13]  ( .D(N711), .CK(GCK), .RN(n1616), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1185|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[1][14]  ( .D(N716), .CK(GCK), .RN(n1616), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1187|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[1][15]  ( .D(N721), .CK(GCK), .RN(n1616), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1189|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[2][1]  ( .D(N726), .CK(GCK), .RN(n1614), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1191|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[2][3]  ( .D(N736), .CK(GCK), .RN(n1617), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1193|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[2][4]  ( .D(N741), .CK(GCK), .RN(n1626), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1195|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[2][5]  ( .D(N746), .CK(GCK), .RN(n1625), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1197|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[2][6]  ( .D(N751), .CK(GCK), .RN(n1625), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1199|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[2][7]  ( .D(N756), .CK(GCK), .RN(n1617), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1201|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[2][9]  ( .D(N766), .CK(GCK), .RN(n1626), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1203|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[2][10]  ( .D(N771), .CK(GCK), .RN(n1613), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1205|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[2][11]  ( .D(N776), .CK(GCK), .RN(n1613), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1207|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[2][12]  ( .D(N781), .CK(GCK), .RN(n1614), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1209|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[2][13]  ( .D(N786), .CK(GCK), .RN(n1625), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1211|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[2][14]  ( .D(N791), .CK(GCK), .RN(n1621), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1213|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[2][15]  ( .D(N796), .CK(GCK), .RN(n1617), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1215|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[3][1]  ( .D(N801), .CK(GCK), .RN(n1613), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1217|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[3][3]  ( .D(N811), .CK(GCK), .RN(n1613), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1219|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[3][5]  ( .D(N821), .CK(GCK), .RN(n1622), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1221|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[3][6]  ( .D(N826), .CK(GCK), .RN(n1626), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1223|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[3][7]  ( .D(N831), .CK(GCK), .RN(n1614), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1225|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[3][9]  ( .D(N841), .CK(GCK), .RN(n1619), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1227|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[3][11]  ( .D(N851), .CK(GCK), .RN(n1619), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1229|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[3][12]  ( .D(N856), .CK(GCK), .RN(n1619), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1231|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[3][13]  ( .D(N861), .CK(GCK), .RN(n1619), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1233|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[3][14]  ( .D(N866), .CK(GCK), .RN(n1619), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1235|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[3][15]  ( .D(N871), .CK(GCK), .RN(n1619), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1237|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[4][1]  ( .D(N876), .CK(GCK), .RN(n1619), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1239|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[4][4]  ( .D(N891), .CK(GCK), .RN(n1620), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1241|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[4][5]  ( .D(N896), .CK(GCK), .RN(n1620), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1243|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[4][6]  ( .D(N901), .CK(GCK), .RN(n1620), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1245|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[4][10]  ( .D(N921), .CK(GCK), .RN(n1620), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1247|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[4][11]  ( .D(N926), .CK(GCK), .RN(n1620), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1249|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[4][12]  ( .D(N931), .CK(GCK), .RN(n1620), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1251|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[4][13]  ( .D(N936), .CK(GCK), .RN(n1620), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1253|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[4][14]  ( .D(N941), .CK(GCK), .RN(n1620), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1255|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[4][15]  ( .D(N946), .CK(GCK), .RN(n1620), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1257|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[5][1]  ( .D(N951), .CK(GCK), .RN(n1622), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1259|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[5][3]  ( .D(N961), .CK(GCK), .RN(n1609), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1261|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[5][4]  ( .D(N966), .CK(GCK), .RN(n1609), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1263|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[5][5]  ( .D(N971), .CK(GCK), .RN(n1613), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1265|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[5][6]  ( .D(N976), .CK(GCK), .RN(n1622), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1267|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[5][7]  ( .D(N981), .CK(GCK), .RN(n1625), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1269|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[5][9]  ( .D(N991), .CK(GCK), .RN(n1613), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1271|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[5][10]  ( .D(N996), .CK(GCK), .RN(n1621), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1273|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[5][11]  ( .D(N1001), .CK(GCK), .RN(n1625), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1275|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[5][12]  ( .D(N1006), .CK(GCK), .RN(n1626), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1277|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[5][13]  ( .D(N1011), .CK(GCK), .RN(n1621), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1279|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[5][14]  ( .D(N1016), .CK(GCK), .RN(n1614), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1281|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[8][1]  ( .D(N1176), .CK(GCK), .RN(n1624), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1283|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[9][10]  ( .D(N1296), .CK(GCK), .RN(n1621), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1285|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[9][13]  ( .D(N1311), .CK(GCK), .RN(n1609), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1287|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[10][15]  ( .D(N1396), .CK(GCK), .RN(n1622), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1289|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[11][1]  ( .D(N1401), .CK(GCK), .RN(n1626), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1291|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[11][3]  ( .D(N1411), .CK(GCK), .RN(n1622), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1293|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[11][4]  ( .D(N1416), .CK(GCK), .RN(n1609), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1295|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[11][6]  ( .D(N1426), .CK(GCK), .RN(n1614), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1297|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[11][7]  ( .D(N1431), .CK(GCK), .RN(n1622), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1299|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[11][9]  ( .D(N1441), .CK(GCK), .RN(n1626), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1301|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[11][10]  ( .D(N1446), .CK(GCK), .RN(n1614), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1303|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[11][11]  ( .D(N1451), .CK(GCK), .RN(n1621), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1305|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[11][12]  ( .D(N1456), .CK(GCK), .RN(n1622), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1307|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[11][13]  ( .D(N1461), .CK(GCK), .RN(n1613), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1309|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[11][15]  ( .D(N1471), .CK(GCK), .RN(n1595), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1311|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[12][2]  ( .D(N1481), .CK(GCK), .RN(n1607), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1313|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[12][3]  ( .D(N1486), .CK(GCK), .RN(n1607), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1315|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[12][5]  ( .D(N1496), .CK(GCK), .RN(n1620), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1317|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[12][6]  ( .D(N1501), .CK(GCK), .RN(n1619), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1319|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[12][7]  ( .D(N1506), .CK(GCK), .RN(n1624), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1321|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[12][9]  ( .D(N1516), .CK(GCK), .RN(n1608), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1323|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[12][12]  ( .D(N1531), .CK(GCK), .RN(n1594), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1325|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[12][14]  ( .D(N1541), .CK(GCK), .RN(n1616), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1327|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[12][15]  ( .D(N1546), .CK(GCK), .RN(n1611), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1329|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[13][2]  ( .D(N1556), .CK(GCK), .RN(n1623), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1331|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[13][3]  ( .D(N1561), .CK(GCK), .RN(n1608), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1333|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[13][8]  ( .D(N1586), .CK(GCK), .RN(n1616), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1335|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[13][9]  ( .D(N1591), .CK(GCK), .RN(n1612), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1337|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[14][7]  ( .D(N1656), .CK(GCK), .RN(n1609), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1339|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[13][1]  ( .D(N1551), .CK(GCK), .RN(n1624), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1341|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[13][7]  ( .D(N1581), .CK(GCK), .RN(n1594), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1343|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[15][7]  ( .D(N1731), .CK(GCK), .RN(n1611), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1345|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[15][10]  ( .D(N1746), .CK(GCK), .RN(n1611), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1347|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[15][3]  ( .D(N1711), .CK(GCK), .RN(n1611), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1349|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[15][6]  ( .D(N1726), .CK(GCK), .RN(n1611), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1351|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[15][8]  ( .D(N1736), .CK(GCK), .RN(n1611), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1353|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[15][9]  ( .D(N1741), .CK(GCK), .RN(n1611), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1355|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[15][11]  ( .D(N1751), .CK(GCK), .RN(n1611), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1357|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[15][12]  ( .D(N1756), .CK(GCK), .RN(n1611), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1359|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[15][14]  ( .D(N1766), .CK(GCK), .RN(n1611), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1361|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[0][11]  ( .D(N626), .CK(GCK), .RN(n1601), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1363|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[3][4]  ( .D(N816), .CK(GCK), .RN(n1621), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1365|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[14][2]  ( .D(N1631), .CK(GCK), .RN(n1609), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1367|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[15][13]  ( .D(N1761), .CK(GCK), .RN(n1611), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1369|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[13][15]  ( .D(N1621), .CK(GCK), .RN(n1617), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1373|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[11][14]  ( .D(N1466), .CK(GCK), .RN(n1617), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1375|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[5][8]  ( .D(N986), .CK(GCK), .RN(n1609), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1377|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[11][2]  ( .D(N1406), .CK(GCK), .RN(n1621), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1379|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[12][4]  ( .D(N1491), .CK(GCK), .RN(n1612), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1381|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[0][14]  ( .D(N641), .CK(GCK), .RN(n1601), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1383|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[14][6]  ( .D(N1651), .CK(GCK), .RN(n1625), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1385|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[12][8]  ( .D(N1511), .CK(GCK), .RN(n1623), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1387|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[11][5]  ( .D(N1421), .CK(GCK), .RN(n1595), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1389|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[1][9]  ( .D(N691), .CK(GCK), .RN(n1602), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1391|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[2][8]  ( .D(N761), .CK(GCK), .RN(n1614), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1393|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[3][8]  ( .D(N836), .CK(GCK), .RN(n1619), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1395|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[3][10]  ( .D(N846), .CK(GCK), .RN(n1619), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1397|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[4][3]  ( .D(N886), .CK(GCK), .RN(n1619), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1399|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[4][9]  ( .D(N916), .CK(GCK), .RN(n1620), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1401|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[10][13]  ( .D(N1386), .CK(GCK), .RN(n1614), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1403|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[14][5]  ( .D(N1646), .CK(GCK), .RN(n1625), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1405|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[15][4]  ( .D(N1716), .CK(GCK), .RN(n1616), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1407|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[0][3]  ( .D(N586), .CK(GCK), .RN(n1600), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1409|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[1][3]  ( .D(N661), .CK(GCK), .RN(n1602), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1411|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[10][11]  ( .D(N1376), .CK(GCK), .RN(n1594), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1413|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[12][10]  ( .D(N1521), .CK(GCK), .RN(n1615), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1415|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[13][12]  ( .D(N1606), .CK(GCK), .RN(n1626), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1417|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[14][3]  ( .D(N1636), .CK(GCK), .RN(n1613), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1419|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[1][2]  ( .D(N656), .CK(GCK), .RN(n1602), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1421|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[13][10]  ( .D(N1596), .CK(GCK), .RN(n1611), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1423|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[13][11]  ( .D(N1601), .CK(GCK), .RN(n1612), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1425|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[13][13]  ( .D(N1611), .CK(GCK), .RN(n1622), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1427|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[13][14]  ( .D(N1616), .CK(GCK), .RN(n1609), .Q(
+                                 |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1429|33): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[14][4]  ( .D(N1641), .CK(GCK), .RN(n1617), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1431|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[0][2]  ( .D(N581), .CK(GCK), .RN(n1600), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1433|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[0][4]  ( .D(N591), .CK(GCK), .RN(n1601), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1435|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[0][5]  ( .D(N596), .CK(GCK), .RN(n1601), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1437|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[0][6]  ( .D(N601), .CK(GCK), .RN(n1601), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1439|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[0][7]  ( .D(N606), .CK(GCK), .RN(n1601), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1441|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[0][8]  ( .D(N611), .CK(GCK), .RN(n1601), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1443|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[0][9]  ( .D(N616), .CK(GCK), .RN(n1601), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1445|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[0][10]  ( .D(N621), .CK(GCK), .RN(n1601), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1447|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[0][12]  ( .D(N631), .CK(GCK), .RN(n1601), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1449|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[0][13]  ( .D(N636), .CK(GCK), .RN(n1601), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1451|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[1][1]  ( .D(N651), .CK(GCK), .RN(n1602), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1453|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[1][4]  ( .D(N666), .CK(GCK), .RN(n1602), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1455|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[1][5]  ( .D(N671), .CK(GCK), .RN(n1602), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1457|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[1][6]  ( .D(N676), .CK(GCK), .RN(n1602), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1459|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[1][7]  ( .D(N681), .CK(GCK), .RN(n1602), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1461|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[1][8]  ( .D(N686), .CK(GCK), .RN(n1602), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1463|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[4][8]  ( .D(N911), .CK(GCK), .RN(n1620), .Q(
+                               |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1465|31): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pxl_current_reg[14][1]  ( .D(N1626), .CK(GCK), .RN(n1617), .Q(
+                                |
+ncelab: *W,CUVWSP (./LEDDC_syn.v,1467|32): 1 output port was not connected:
+ncelab: (/RAID2/COURSE/si2_contest/si2_contest004/IC_CONTEST/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): QN
+
+	Top level design units:
+		test
+	Reading SDF file from location "./LEDDC_syn.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     LEDDC_syn.sdf.X
+		Log file:              
+		Backannotation scope:  test.u_LEDDC
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+ncelab: *W,NTCNTX: +notimingcheck is in use while a design has negative timing checks.  If the design requires NTC delays to work properly, +ncntcnotchks should be used instead.
+	SDF statistics: No. of Pathdelays = 6042  Annotated = 100.00% -- No. of Tchecks = 3612  Annotated = 99.83% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        6042	        6042	      100.00
+		      $setup	           4	           4	      100.00
+		       $hold	           2	           0	        0.00
+		     $period	           4	           4	      100.00
+		      $width	        1733	        1733	      100.00
+		  $setuphold	        1869	        1865	       99.79
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.test:v <0x27aa6ad1>
+			streams:  14, words: 55835
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                 1890      67
+		UDPs:                     578       2
+		Primitives:              5436       8
+		Timing outputs:          2493      41
+		Registers:                849     157
+		Scalar wires:            3091       -
+		Expanded wires:            32       2
+		Always blocks:             12       8
+		Initial blocks:             8       8
+		Cont. assignments:         12       6
+		Pseudo assignments:         2       2
+		Timing checks:           5481       -
+		Interconnect:            5476       -
+		Delayed tcheck signals:  1725       -
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'LEDDC_60fps.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+
+Pass @  frame_00   scanline_00 (round_00) 
+
+
+Pass @  frame_00   scanline_01 (round_00) 
+
+
+Pass @  frame_00   scanline_02 (round_00) 
+
+
+Pass @  frame_00   scanline_03 (round_00) 
+
+
+Pass @  frame_00   scanline_04 (round_00) 
+
+
+Pass @  frame_00   scanline_05 (round_00) 
+
+
+Pass @  frame_00   scanline_06 (round_00) 
+
+
+Pass @  frame_00   scanline_07 (round_00) 
+
+
+Pass @  frame_00   scanline_08 (round_00) 
+
+
+Pass @  frame_00   scanline_09 (round_00) 
+
+
+Pass @  frame_00   scanline_10 (round_00) 
+
+
+Pass @  frame_00   scanline_11 (round_00) 
+
+
+Pass @  frame_00   scanline_12 (round_00) 
+
+
+Pass @  frame_00   scanline_13 (round_00) 
+
+
+Pass @  frame_00   scanline_14 (round_00) 
+
+
+Pass @  frame_00   scanline_15 (round_00) 
+
+
+Pass @  frame_00   scanline_16 (round_00) 
+
+
+Pass @  frame_00   scanline_17 (round_00) 
+
+
+Pass @  frame_00   scanline_18 (round_00) 
+
+
+Pass @  frame_00   scanline_19 (round_00) 
+
+
+Pass @  frame_00   scanline_20 (round_00) 
+
+
+Pass @  frame_00   scanline_21 (round_00) 
+
+
+Pass @  frame_00   scanline_22 (round_00) 
+
+
+Pass @  frame_00   scanline_23 (round_00) 
+
+
+Pass @  frame_00   scanline_24 (round_00) 
+
+
+Pass @  frame_00   scanline_25 (round_00) 
+
+
+Pass @  frame_00   scanline_26 (round_00) 
+
+
+Pass @  frame_00   scanline_27 (round_00) 
+
+
+Pass @  frame_00   scanline_28 (round_00) 
+
+
+Pass @  frame_00   scanline_29 (round_00) 
+
+
+Pass @  frame_00   scanline_30 (round_00) 
+
+
+Pass @  frame_00   scanline_31 (round_00) 
+
+
+Pass @  frame_00   scanline_00 (round_01) 
+
+
+Pass @  frame_00   scanline_01 (round_01) 
+
+
+Pass @  frame_00   scanline_02 (round_01) 
+
+
+Pass @  frame_00   scanline_03 (round_01) 
+
+
+Pass @  frame_00   scanline_04 (round_01) 
+
+
+Pass @  frame_00   scanline_05 (round_01) 
+
+
+Pass @  frame_00   scanline_06 (round_01) 
+
+
+Pass @  frame_00   scanline_07 (round_01) 
+
+
+Pass @  frame_00   scanline_08 (round_01) 
+
+
+Pass @  frame_00   scanline_09 (round_01) 
+
+
+Pass @  frame_00   scanline_10 (round_01) 
+
+
+Pass @  frame_00   scanline_11 (round_01) 
+
+
+Pass @  frame_00   scanline_12 (round_01) 
+
+
+Pass @  frame_00   scanline_13 (round_01) 
+
+
+Pass @  frame_00   scanline_14 (round_01) 
+
+
+Pass @  frame_00   scanline_15 (round_01) 
+
+
+Pass @  frame_00   scanline_16 (round_01) 
+
+
+Pass @  frame_00   scanline_17 (round_01) 
+
+
+Pass @  frame_00   scanline_18 (round_01) 
+
+
+Pass @  frame_00   scanline_19 (round_01) 
+
+
+Pass @  frame_00   scanline_20 (round_01) 
+
+
+Pass @  frame_00   scanline_21 (round_01) 
+
+
+Pass @  frame_00   scanline_22 (round_01) 
+
+
+Pass @  frame_00   scanline_23 (round_01) 
+
+
+Pass @  frame_00   scanline_24 (round_01) 
+
+
+Pass @  frame_00   scanline_25 (round_01) 
+
+
+Pass @  frame_00   scanline_26 (round_01) 
+
+
+Pass @  frame_00   scanline_27 (round_01) 
+
+
+Pass @  frame_00   scanline_28 (round_01) 
+
+
+Pass @  frame_00   scanline_29 (round_01) 
+
+
+Pass @  frame_00   scanline_30 (round_01) 
+
+
+Pass @  frame_00   scanline_31 (round_01) 
+
+
+Pass @  frame_01   scanline_00 (round_00) 
+
+
+Pass @  frame_01   scanline_01 (round_00) 
+
+
+Pass @  frame_01   scanline_02 (round_00) 
+
+
+Pass @  frame_01   scanline_03 (round_00) 
+
+
+Pass @  frame_01   scanline_04 (round_00) 
+
+
+Pass @  frame_01   scanline_05 (round_00) 
+
+
+Pass @  frame_01   scanline_06 (round_00) 
+
+
+Pass @  frame_01   scanline_07 (round_00) 
+
+
+Pass @  frame_01   scanline_08 (round_00) 
+
+
+Pass @  frame_01   scanline_09 (round_00) 
+
+
+Pass @  frame_01   scanline_10 (round_00) 
+
+
+Pass @  frame_01   scanline_11 (round_00) 
+
+
+Pass @  frame_01   scanline_12 (round_00) 
+
+
+Pass @  frame_01   scanline_13 (round_00) 
+
+
+Pass @  frame_01   scanline_14 (round_00) 
+
+
+Pass @  frame_01   scanline_15 (round_00) 
+
+
+Pass @  frame_01   scanline_16 (round_00) 
+
+
+Pass @  frame_01   scanline_17 (round_00) 
+
+
+Pass @  frame_01   scanline_18 (round_00) 
+
+
+Pass @  frame_01   scanline_19 (round_00) 
+
+
+Pass @  frame_01   scanline_20 (round_00) 
+
+
+Pass @  frame_01   scanline_21 (round_00) 
+
+
+Pass @  frame_01   scanline_22 (round_00) 
+
+
+Pass @  frame_01   scanline_23 (round_00) 
+
+
+Pass @  frame_01   scanline_24 (round_00) 
+
+
+Pass @  frame_01   scanline_25 (round_00) 
+
+
+Pass @  frame_01   scanline_26 (round_00) 
+
+
+Pass @  frame_01   scanline_27 (round_00) 
+
+
+Pass @  frame_01   scanline_28 (round_00) 
+
+
+Pass @  frame_01   scanline_29 (round_00) 
+
+
+Pass @  frame_01   scanline_30 (round_00) 
+
+
+Pass @  frame_01   scanline_31 (round_00) 
+
+
+Pass @  frame_01   scanline_00 (round_01) 
+
+
+Pass @  frame_01   scanline_01 (round_01) 
+
+
+Pass @  frame_01   scanline_02 (round_01) 
+
+
+Pass @  frame_01   scanline_03 (round_01) 
+
+
+Pass @  frame_01   scanline_04 (round_01) 
+
+
+Pass @  frame_01   scanline_05 (round_01) 
+
+
+Pass @  frame_01   scanline_06 (round_01) 
+
+
+Pass @  frame_01   scanline_07 (round_01) 
+
+
+Pass @  frame_01   scanline_08 (round_01) 
+
+
+Pass @  frame_01   scanline_09 (round_01) 
+
+
+Pass @  frame_01   scanline_10 (round_01) 
+
+
+Pass @  frame_01   scanline_11 (round_01) 
+
+
+Pass @  frame_01   scanline_12 (round_01) 
+
+
+Pass @  frame_01   scanline_13 (round_01) 
+
+
+Pass @  frame_01   scanline_14 (round_01) 
+
+
+Pass @  frame_01   scanline_15 (round_01) 
+
+
+Pass @  frame_01   scanline_16 (round_01) 
+
+
+Pass @  frame_01   scanline_17 (round_01) 
+
+
+Pass @  frame_01   scanline_18 (round_01) 
+
+
+Pass @  frame_01   scanline_19 (round_01) 
+
+
+Pass @  frame_01   scanline_20 (round_01) 
+
+
+Pass @  frame_01   scanline_21 (round_01) 
+
+
+Pass @  frame_01   scanline_22 (round_01) 
+
+
+Pass @  frame_01   scanline_23 (round_01) 
+
+
+Pass @  frame_01   scanline_24 (round_01) 
+
+
+Pass @  frame_01   scanline_25 (round_01) 
+
+
+Pass @  frame_01   scanline_26 (round_01) 
+
+
+Pass @  frame_01   scanline_27 (round_01) 
+
+
+Pass @  frame_01   scanline_28 (round_01) 
+
+
+Pass @  frame_01   scanline_29 (round_01) 
+
+
+Pass @  frame_01   scanline_30 (round_01) 
+
+
+Pass @  frame_01   scanline_31 (round_01) 
+
+
+Pass @  frame_02   scanline_00 (round_00) 
+
+
+Pass @  frame_02   scanline_01 (round_00) 
+
+
+Pass @  frame_02   scanline_02 (round_00) 
+
+
+Pass @  frame_02   scanline_03 (round_00) 
+
+
+Pass @  frame_02   scanline_04 (round_00) 
+
+
+Pass @  frame_02   scanline_05 (round_00) 
+
+
+Pass @  frame_02   scanline_06 (round_00) 
+
+
+Pass @  frame_02   scanline_07 (round_00) 
+
+
+Pass @  frame_02   scanline_08 (round_00) 
+
+
+Pass @  frame_02   scanline_09 (round_00) 
+
+
+Pass @  frame_02   scanline_10 (round_00) 
+
+
+Pass @  frame_02   scanline_11 (round_00) 
+
+
+Pass @  frame_02   scanline_12 (round_00) 
+
+
+Pass @  frame_02   scanline_13 (round_00) 
+
+
+Pass @  frame_02   scanline_14 (round_00) 
+
+
+Pass @  frame_02   scanline_15 (round_00) 
+
+
+Pass @  frame_02   scanline_16 (round_00) 
+
+
+Pass @  frame_02   scanline_17 (round_00) 
+
+
+Pass @  frame_02   scanline_18 (round_00) 
+
+
+Pass @  frame_02   scanline_19 (round_00) 
+
+
+Pass @  frame_02   scanline_20 (round_00) 
+
+
+Pass @  frame_02   scanline_21 (round_00) 
+
+
+Pass @  frame_02   scanline_22 (round_00) 
+
+
+Pass @  frame_02   scanline_23 (round_00) 
+
+
+Pass @  frame_02   scanline_24 (round_00) 
+
+
+Pass @  frame_02   scanline_25 (round_00) 
+
+
+Pass @  frame_02   scanline_26 (round_00) 
+
+
+Pass @  frame_02   scanline_27 (round_00) 
+
+
+Pass @  frame_02   scanline_28 (round_00) 
+
+
+Pass @  frame_02   scanline_29 (round_00) 
+
+
+Pass @  frame_02   scanline_30 (round_00) 
+
+
+Pass @  frame_02   scanline_31 (round_00) 
+
+
+Pass @  frame_02   scanline_00 (round_01) 
+
+
+Pass @  frame_02   scanline_01 (round_01) 
+
+
+Pass @  frame_02   scanline_02 (round_01) 
+
+
+Pass @  frame_02   scanline_03 (round_01) 
+
+
+Pass @  frame_02   scanline_04 (round_01) 
+
+
+Pass @  frame_02   scanline_05 (round_01) 
+
+
+Pass @  frame_02   scanline_06 (round_01) 
+
+
+Pass @  frame_02   scanline_07 (round_01) 
+
+
+Pass @  frame_02   scanline_08 (round_01) 
+
+
+Pass @  frame_02   scanline_09 (round_01) 
+
+
+Pass @  frame_02   scanline_10 (round_01) 
+
+
+Pass @  frame_02   scanline_11 (round_01) 
+
+
+Pass @  frame_02   scanline_12 (round_01) 
+
+
+Pass @  frame_02   scanline_13 (round_01) 
+
+
+Pass @  frame_02   scanline_14 (round_01) 
+
+
+Pass @  frame_02   scanline_15 (round_01) 
+
+
+Pass @  frame_02   scanline_16 (round_01) 
+
+
+Pass @  frame_02   scanline_17 (round_01) 
+
+
+Pass @  frame_02   scanline_18 (round_01) 
+
+
+Pass @  frame_02   scanline_19 (round_01) 
+
+
+Pass @  frame_02   scanline_20 (round_01) 
+
+
+Pass @  frame_02   scanline_21 (round_01) 
+
+
+Pass @  frame_02   scanline_22 (round_01) 
+
+
+Pass @  frame_02   scanline_23 (round_01) 
+
+
+Pass @  frame_02   scanline_24 (round_01) 
+
+
+Pass @  frame_02   scanline_25 (round_01) 
+
+
+Pass @  frame_02   scanline_26 (round_01) 
+
+
+Pass @  frame_02   scanline_27 (round_01) 
+
+
+Pass @  frame_02   scanline_28 (round_01) 
+
+
+Pass @  frame_02   scanline_29 (round_01) 
+
+
+Pass @  frame_02   scanline_30 (round_01) 
+
+
+Pass @  frame_02   scanline_31 (round_01) 
+
+
+Pass @  frame_03   scanline_00 (round_00) 
+
+
+Pass @  frame_03   scanline_01 (round_00) 
+
+
+Pass @  frame_03   scanline_02 (round_00) 
+
+
+Pass @  frame_03   scanline_03 (round_00) 
+
+
+Pass @  frame_03   scanline_04 (round_00) 
+
+
+Pass @  frame_03   scanline_05 (round_00) 
+
+
+Pass @  frame_03   scanline_06 (round_00) 
+
+
+Pass @  frame_03   scanline_07 (round_00) 
+
+
+Pass @  frame_03   scanline_08 (round_00) 
+
+
+Pass @  frame_03   scanline_09 (round_00) 
+
+
+Pass @  frame_03   scanline_10 (round_00) 
+
+
+Pass @  frame_03   scanline_11 (round_00) 
+
+
+Pass @  frame_03   scanline_12 (round_00) 
+
+
+Pass @  frame_03   scanline_13 (round_00) 
+
+
+Pass @  frame_03   scanline_14 (round_00) 
+
+
+Pass @  frame_03   scanline_15 (round_00) 
+
+
+Pass @  frame_03   scanline_16 (round_00) 
+
+
+Pass @  frame_03   scanline_17 (round_00) 
+
+
+Pass @  frame_03   scanline_18 (round_00) 
+
+
+Pass @  frame_03   scanline_19 (round_00) 
+
+
+Pass @  frame_03   scanline_20 (round_00) 
+
+
+Pass @  frame_03   scanline_21 (round_00) 
+
+
+Pass @  frame_03   scanline_22 (round_00) 
+
+
+Pass @  frame_03   scanline_23 (round_00) 
+
+
+Pass @  frame_03   scanline_24 (round_00) 
+
+
+Pass @  frame_03   scanline_25 (round_00) 
+
+
+Pass @  frame_03   scanline_26 (round_00) 
+
+
+Pass @  frame_03   scanline_27 (round_00) 
+
+
+Pass @  frame_03   scanline_28 (round_00) 
+
+
+Pass @  frame_03   scanline_29 (round_00) 
+
+
+Pass @  frame_03   scanline_30 (round_00) 
+
+
+Pass @  frame_03   scanline_31 (round_00) 
+
+
+Pass @  frame_03   scanline_00 (round_01) 
+
+
+Pass @  frame_03   scanline_01 (round_01) 
+
+
+Pass @  frame_03   scanline_02 (round_01) 
+
+
+Pass @  frame_03   scanline_03 (round_01) 
+
+
+Pass @  frame_03   scanline_04 (round_01) 
+
+
+Pass @  frame_03   scanline_05 (round_01) 
+
+
+Pass @  frame_03   scanline_06 (round_01) 
+
+
+Pass @  frame_03   scanline_07 (round_01) 
+
+
+Pass @  frame_03   scanline_08 (round_01) 
+
+
+Pass @  frame_03   scanline_09 (round_01) 
+
+
+Pass @  frame_03   scanline_10 (round_01) 
+
+
+Pass @  frame_03   scanline_11 (round_01) 
+
+
+Pass @  frame_03   scanline_12 (round_01) 
+
+
+Pass @  frame_03   scanline_13 (round_01) 
+
+
+Pass @  frame_03   scanline_14 (round_01) 
+
+
+Pass @  frame_03   scanline_15 (round_01) 
+
+
+Pass @  frame_03   scanline_16 (round_01) 
+
+
+Pass @  frame_03   scanline_17 (round_01) 
+
+
+Pass @  frame_03   scanline_18 (round_01) 
+
+
+Pass @  frame_03   scanline_19 (round_01) 
+
+
+Pass @  frame_03   scanline_20 (round_01) 
+
+
+Pass @  frame_03   scanline_21 (round_01) 
+
+
+Pass @  frame_03   scanline_22 (round_01) 
+
+
+Pass @  frame_03   scanline_23 (round_01) 
+
+
+Pass @  frame_03   scanline_24 (round_01) 
+
+
+Pass @  frame_03   scanline_25 (round_01) 
+
+
+Pass @  frame_03   scanline_26 (round_01) 
+
+
+Pass @  frame_03   scanline_27 (round_01) 
+
+
+Pass @  frame_03   scanline_28 (round_01) 
+
+
+Pass @  frame_03   scanline_29 (round_01) 
+
+
+Pass @  frame_03   scanline_30 (round_01) 
+
+
+Pass @  frame_03   scanline_31 (round_01) 
+
+
+-----------------------------------------------------
+
+Congratulations! All data have been generated successfully!
+
+-------------------------PASS------------------------
+
+Simulation complete via $finish(1) at time 83331290 NS + 0
+./testfixture_60fps.v:305       $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s084: Exiting on Apr 21, 2023 at 23:11:02 CST  (total: 00:01:21)

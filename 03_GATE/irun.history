@@ -1,0 +1,7 @@
+s1(21Apr2023:23:02:32):  irun -f ncvlog_30.f -loadpli1 debpli:novas_pli_boot 
+s2(21Apr2023:23:04:31):  irun -f ncvlog_30.f -loadpli1 debpli:novas_pli_boot 
+s3(21Apr2023:23:05:38):  irun -f ncvlog_30.f -loadpli1 debpli:novas_pli_boot 
+s4(21Apr2023:23:05:58):  irun -f ncvlog_30.f -loadpli1 debpli:novas_pli_boot 
+s5(21Apr2023:23:06:40):  irun -f ncvlog_30.f -loadpli1 debpli:novas_pli_boot 
+s6(21Apr2023:23:08:16):  irun -f ncvlog_30.f -loadpli1 debpli:novas_pli_boot 
+s7(21Apr2023:23:09:41):  irun -f ncvlog_60.f -loadpli1 debpli:novas_pli_boot 
